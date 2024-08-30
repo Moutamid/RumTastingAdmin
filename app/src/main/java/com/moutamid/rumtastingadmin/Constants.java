@@ -26,6 +26,7 @@ import java.net.URL;
 public class Constants {
     static Dialog dialog;
     public static final String RUMS = "RUMS";
+    public static final String ID = "ID";
 
     public static void initDialog(Context context) {
         dialog = new Dialog(context);

@@ -45,13 +45,13 @@ public class AddNewActivity extends AppCompatActivity {
         binding.upload.setOnClickListener(v -> {
             if (valid()) {
                 Constants.showDialog();
-                uploadimage();
+                uploadImage();
             }
         });
 
     }
 
-    private void uploadimage() {
+    private void uploadImage() {
         Constants.storageReference("Images").child(new SimpleDateFormat("ddMMyyyyhhmmss", Locale.getDefault()).format(new Date()))
                 .putFile(imageUri)
                 .addOnFailureListener(e -> {
@@ -68,7 +68,7 @@ public class AddNewActivity extends AppCompatActivity {
         RumModel model = new RumModel(
                 UUID.randomUUID().toString(),
                 binding.name.getEditText().getText().toString(),
-                binding.name.getEditText().getText().toString(),
+                binding.description.getEditText().getText().toString(),
                 uri
         );
         Constants.databaseReference().child(Constants.RUMS).child(model.id)
