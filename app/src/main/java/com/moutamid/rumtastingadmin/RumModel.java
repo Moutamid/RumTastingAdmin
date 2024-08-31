@@ -2,7 +2,7 @@ package com.moutamid.rumtastingadmin;
 
 public class RumModel {
     public String id, name, description, image;
-    public RatingModel ratingModel;
+    public RatingModel rating;
 
     public RumModel() {
     }
