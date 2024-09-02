@@ -40,7 +40,7 @@ public class UpdateActivity extends AppCompatActivity {
 
         binding.image.setOnClickListener(v -> {
             ImagePicker.with(this)
-                    .cropSquare()
+                    .crop()
                     .compress(1024)
                     .maxResultSize(1080, 1080)
                     .start();
