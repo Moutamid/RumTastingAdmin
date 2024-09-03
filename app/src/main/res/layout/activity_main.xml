@@ -43,7 +43,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="New"
+            android:backgroundTint="@color/red5418"
             app:icon="@drawable/round_add_24"
+            android:textColor="@color/white"
+            app:iconTint="@color/white"
             android:id="@+id/add" />
 
     </LinearLayout>
